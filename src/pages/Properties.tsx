@@ -69,14 +69,14 @@ const Properties = () => {
             <p className="text-[11px] tracking-widest uppercase text-muted-foreground mb-8">
               {filtered.length} {filtered.length === 1 ? "property" : "properties"}
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filtered.map((listing) => (
                 <a
                   key={listing.id}
                   href="https://www.wolvesint.ae/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="fade-up group bg-background"
+                  className="group bg-background border border-border overflow-hidden"
                 >
                   <div className="overflow-hidden">
                     <img

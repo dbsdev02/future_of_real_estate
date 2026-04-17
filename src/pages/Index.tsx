@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import NewsFlashSection from "@/components/NewsFlashSection";
+import PropertyTransactionsSection from "@/components/PropertyTransactionsSection";
+import RoadshowsSection from "@/components/RoadshowsSection";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import project1 from "@/assets/project-1.jpg";
 import project2 from "@/assets/project-2.jpg";
@@ -23,6 +26,7 @@ const Index = () => {
     <main className="bg-background">
       <Navbar />
       <HeroSection />
+      <NewsFlashSection />
 
       {/* Categories Preview */}
       <section ref={ref} className="section-padding py-20 md:py-32">
@@ -41,12 +45,12 @@ const Index = () => {
               View All →
             </Link>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-border">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {categories.map((cat) => (
               <Link
                 key={cat.title}
                 to="/properties"
-                className="fade-up group bg-background"
+                className="fade-up group bg-background border border-border overflow-hidden"
               >
                 <div className="overflow-hidden">
                   <img
@@ -72,6 +76,9 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      <PropertyTransactionsSection />
+      <RoadshowsSection />
 
       {/* Brief About */}
       <section className="section-padding py-20 md:py-32 border-t border-border">

@@ -1,14 +1,12 @@
-import heroBg from "@/assets/hero-bg.jpg";
-
 const HeroSection = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <img
-        src={heroBg}
-        alt="Luxury modern architecture"
+        src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=90&auto=format&fit=crop"
+        alt="Luxury waterfront apartment"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-foreground/50" />
+      <div className="absolute inset-0 bg-foreground/40" />
       <div className="relative z-10 h-full flex flex-col justify-end section-padding pb-16 md:pb-24">
         <div className="max-w-2xl">
           <h1 className="font-sans text-4xl md:text-6xl lg:text-7xl font-light text-primary-foreground tracking-tight leading-[1.1] mb-6">
